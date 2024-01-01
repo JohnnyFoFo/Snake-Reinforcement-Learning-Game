@@ -31,7 +31,7 @@ class Linear_QNet(nn.Module):
 
 
 class QTrainer:
-    def __init__(self, model: Linear_QNet(), lr: float, gamma: float) -> None:
+    def __init__(self, model: Linear_QNet, lr: float, gamma: float) -> None:
         '''Constructor for Trainer Objects where the model, loss, and optimizers are defined'''
         self.lr = lr
         self.gamma = gamma
